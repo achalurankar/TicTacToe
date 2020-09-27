@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <RelativeLayout
+        android:id="@+id/board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/board_drawable"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/x0_y1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x0_y2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x0_y0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x1_y0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x1_y1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x1_y2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x2_y2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x2_y1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/board_drawable" />
+
+        <ImageView
+            android:id="@+id/x2_y0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/board_drawable" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/board"
+        android:text=""
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/rich_black" />
+
+    <TextView
+        android:id="@+id/Restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Result"
+        android:text="Restart"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/rich_black" />
+</RelativeLayout>
